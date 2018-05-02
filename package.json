@@ -1,0 +1,18 @@
+{
+    "name": "yaabmexico.com.mx",
+    "version": "0.0.1",
+    "devDependencies": {
+        "autoprefixer": "^6.3.3",
+        "cssnano": "^3.5.2",
+        "node-sass": "^3.4.2",
+        "postcss": "^5.0.16",
+        "postcss-cli": "^2.5.1",
+        "watch": "^0.17.1"
+    },
+    "scripts": {
+        "prebuild:css": "node-sass --include-path scss assets/sass/_setup.scss    assets/css/main.css",
+        "build:css": "postcss --use autoprefixer assets/css/main.css -d assets/css/ | postcss --use cssnano assets/css/main.css  --output assets/css/main.css",
+        "build": "npm run build:css",
+        "watch": "watch 'npm run build' assets/sass/"
+    }
+}
