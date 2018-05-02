@@ -1,0 +1,45 @@
+    .top-information {    	
+    	@include esmm-gradient;    	
+    	color: #E7E7E7;    	
+        font-family: "Lato",sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0.111em;    	
+    	padding: 1rem 3rem 0rem 3rem;
+    	z-index: 2000 !important;
+
+        @include breakpoint($mobile) {
+        	padding: 1rem;
+        }
+
+
+    	&-container {
+    		display: flex;
+            justify-content:space-between; 
+            padding-bottom: 1rem;
+
+	        @include breakpoint($mobile) {
+	        	flex-wrap: wrap;
+	        }
+
+
+	        .top-information-phone {
+                color: #E7E7E7;
+	        }
+
+    	}
+
+    	i {
+    		font-size: 18px;
+    	}
+
+
+    	.top-information-cart-link {    		
+    		background-color: $header_background_color;
+    		border: 1px solid $header_background_color;
+    		color: #E7E7E7;
+    		padding: 0 1rem;
+
+    	}
+
+    }	

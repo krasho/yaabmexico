@@ -1,0 +1,28 @@
+//IMPORT SCSS MIXINS
+@import "mixins/mixins";
+@import "mixins/breakpoint-setup";
+
+//IMPORT SCSS VARIABLES
+@import "variables/breakpoints";
+@import "variables/color_palette";
+
+
+//@Import common sections
+@import "layout/layout";
+@import "header/header";
+@import "header/nav";
+
+//pages
+@import "pages/home";
+@import "pages/secretos";
+@import "pages/agradecimiento";
+@import "pages/oferta";
+
+@import "plugins/woocommerce/common_styles";
+@import "plugins/woocommerce/single_product";
+@import "plugins/woocommerce/shop";
+@import "plugins/woocommerce/cart";
+@import "plugins/woocommerce/checkout";
+@import "plugins/woocommerce/order_received";
+@import "plugins/wonderplugin/wonderplugin";
+

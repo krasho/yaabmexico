@@ -1,0 +1,133 @@
+body {
+	background: #F5F4F5 !important;
+}
+
+.x-container.width {
+	margin: 0 !important;
+	width: 100% !important;
+}
+
+.page:not(.woocommerce-checkout) {
+	.x-container {
+		   .entry-wrap {		   	
+		   	   padding: 0 !important;
+		   }
+	}	
+}
+
+
+article {
+	.entry-header {
+		display: none;
+	}
+
+	.entry-wrap {
+		background: none !important;
+		border-radius: 0 !important;
+		box-shadow: none !important;
+
+		.with-margin {            
+			margin: 1rem 3rem !important;
+			box-shadow: 0 2px 3px rgba(0,0,0,0.09);
+
+
+	         @include breakpoint($mobile) {	             
+	             margin: 1rem 1rem !important;
+	         }
+
+		}
+	}
+}
+
+
+.x-breadcrumb-wrap {
+	padding: 1.05em 1rem;
+}
+
+
+
+.x-btn:hover, [type="submit"]:hover {	
+	background-color: $header_background_color7 !important;
+	border-color: $header_background_color !important;
+	color: #E7E7E7 !important;
+	
+}
+
+.x-navbar .desktop .x-nav > .current-menu-item > a {
+    box-shadow: inset 0 4px 0 0 rgb(96,145,61) !important;
+}
+
+
+
+#cs-content {
+    .x-btn {
+		background-color: #fff !important;
+		border-color: rgb(96,145,61) !important;
+		border-radius: 0.25em !important;
+		box-shadow: none !important;
+		border-width: 3px !important; 
+
+		&:hover {
+			background: $header_background_color7 !important;
+			border-color: $header_background_color !important;
+			color: #E7E7E7;
+		}
+
+    }
+
+}
+
+
+//FLEX
+.flex {
+    display: flex;
+    align-items: center;
+    &.right {
+        justify-content: flex-end;
+    }
+    &.left {
+        justify-content: flex-start;
+    }
+    &.between {
+        justify-content: space-between;
+    }
+
+    &.around {
+        justify-content: space-around;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+    &.center {
+        justify-content: center;
+    }
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    &.wrap-small {
+        @include breakpoint($small) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &.wrap-mobile {
+        @include breakpoint($mobile) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+//IE9 FALLBACK
+.flex {
+    @include browser("MSIE 9.0") {
+        display: table;
+        width: 100%;
+        > * {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.woocommerce-checkout {
+	.entry-title {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.woocommerce-checkout-flex {
+		display: flex;
+		justify-content: space-between;
+
+        @include breakpoint($small) {
+            flex-direction: column;
+        }
+
+
+		.left-section {
+			background-color: #fff;
+			width: 69%;
+			margin-right: 1%;
+			outline: 1px solid #F1F1F1;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			padding-top: 1rem;
+			
+
+	        @include breakpoint($small) {
+	            margin-right:0;
+	            width: 100%;
+
+	        }
+
+		}
+
+		.right-section {
+			background-color: #fff;
+			outline: 1px solid #F1F1F1;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		    padding-top: 1rem;
+			width: 30%;
+
+
+	        @include breakpoint($small) {
+	        	margin-top: 1rem;
+	            width: 100%;
+	        }
+			
+
+			.place-order {
+				text-align: right;
+			}		
+		}	
+	}
+}

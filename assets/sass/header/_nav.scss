@@ -1,0 +1,117 @@
+.masthead-inline {
+   .desktop {
+       display: block;
+
+       @include breakpoint($mobile) {
+             display: none;
+       }
+
+   	   .x-nav {           
+   	   	   float: right;
+   	   	   display: flex;
+   	   	   justify-content: space-between;
+   	   	   align-items: center;
+   	   	   margin: 0 1rem;
+           padding-top: 0.5rem;
+
+           .menu-item {
+              a {
+
+                 &:hover {
+                    box-shadow:none !important;  
+                    border: 1px solid $header_background_color;
+                 }
+
+              }
+           }
+
+           .current-menu-item {
+              a {
+                 border-bottom: 1px solid $header_background_color;
+                 box-shadow:none !important;  
+
+                 &:hover {
+                    border: 1px solid $header_background_color;
+                 }
+              }
+              
+           }
+   	   }
+   	}
+} 
+
+.x-navbar {
+  box-shadow:none !important;
+  /*@include esmm-gradient;*/
+
+  .x-navbar-inner {
+    .x-container {
+          @include breakpoint($mobile) {
+            display: flex;              
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+      .x-brand.img {
+        padding-left: 2rem;
+
+            @include breakpoint($mobile) {
+             padding-left: 0;
+             width: 80%;
+            }
+
+      }
+
+      .x-btn-navbar {        
+         border: 1px solid #99864A;
+         color: #99864A;
+         display: none;
+         margin-right: 1rem;         
+
+         @include breakpoint($mobile) {
+             display: block;
+             margin: 0 !important;  
+         }
+
+      }
+
+
+      .x-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+      }
+
+      .x-nav-wrap.mobile {
+        background-color: $header_background_color7;
+        width: 100%;
+
+        .menu-item {
+          a {            
+              padding: 0.5rem 0 0.5rem 1rem;  
+          }
+        }
+
+        .x-nav li > a {
+          border: none;
+          border-bottom: 1px solid $header_background_color;
+          color: $header_background_color;
+
+        }        
+        
+      }
+    }
+  }
+}
+
+
+.x-navbar .x-nav-wrap.desktop .x-nav > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0 !important;
+    padding-bottom: 0;
+	
+}

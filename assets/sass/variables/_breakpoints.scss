@@ -1,0 +1,15 @@
+//BREAKPOINTS
+$mobile: 0px 565px;
+$small: 0px 768px;
+$sidebar:0px 975px;
+$medium: 769px 1023px;
+$large: 1024px 1899px;
+$extra-large: (min-width 1900px);
+//LANDSCAPE SMALL DEVICES
+$tablet: (min-height 768px);
+$tablet-l: (min-device-width 768px) (max-device-width  1024px) (orientation landscape);
+
+$tablet-p: (min-device-width 768px) (max-device-width 1024px) (orientation portrait);
+$small-landscape: (max-width 768px) (orientation landscape);
+$small-portrait: (min-width 0px max-width 768px) (orientation portrait);
+$medium-landscape: (max-width 1280px) (orientation landscape);

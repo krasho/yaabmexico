@@ -1,0 +1,134 @@
+.home {
+   .x-container.offset	{
+   	   margin: 0;
+
+
+   	   article {
+	   	  .entry-content {
+	   	  	  margin-top: 0;
+	   	  }
+
+	   	  .cs-content {
+   	          .el1.x-section {
+   	          	margin-bottom:0 !important;
+   	          }   	   	  	
+      	   }
+
+            .image-product-container {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+
+               .image-product {
+                  display:block;               
+                  max-width: 100%;
+               }
+
+            }
+
+            .description-product {               
+               .h-custom-headline {
+                  text-align: center;
+                  span {
+                     content: "";
+                     &:before, &:after {
+                        border: none  !important;
+                     }
+                  }
+               }
+
+               .description-product-content {                  
+                  font-size: 16px;
+                  margin-top: 1rem;
+
+                  padding: 0 1rem;
+                  text-align: left;
+
+               }
+            }  
+
+
+            .resp-p {
+               padding: 0 1rem;
+               text-align: left;
+               
+            }
+
+
+            .slider-desktop {
+                 @include breakpoint($mobile) {
+                     display: none;
+                 }
+
+            }
+
+            .slider-mobile {
+               display: none;
+
+              @include breakpoint($mobile) {
+                  display: block;
+              }
+
+            }
+
+   	   }
+   }
+
+   .x-flexslider-shortcode-container {
+      margin-bottom: 0 !important;
+
+      .flex-control-nav {
+         z-index: 1000;
+
+         @include breakpoint($small) {
+            display:none !important;
+         }
+
+      }
+   }
+
+   .x-container.max {
+      max-width: none !important;
+   }
+
+   .products-list {
+      margin: 1em auto;
+      width: 900px;
+
+      @include breakpoint($small) {
+          width: auto;
+      }
+
+
+    .entry-product {
+       .entry-wrap {
+         display: block !important;
+
+         .entry-header {
+              display: block !important;
+              margin-bottom: 1rem;
+              margin-top: 1.5rem; 
+              padding: 0 0.5rem;
+              
+              .price{
+               margin-top: 1.5rem; 
+              }         
+         }
+       }
+
+       .entry-featured {
+            background-color: #EAEAEA;
+            padding: 1rem;       
+       }
+      
+    }
+
+   }
+
+
+
+     .woocommerce li.product .entry-featured a {
+      display: flex;
+     }   
+}

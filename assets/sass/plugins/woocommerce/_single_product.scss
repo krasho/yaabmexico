@@ -1,0 +1,22 @@
+.single-product  {
+	.a3dg-navbar-control {
+		display: none;
+	}
+
+
+	.cart {
+		.quantity {
+			.input-text {
+				background-color: #fff;
+				border: 1px solid #000;
+				box-sizing: border-box;
+				color: #000;
+
+
+				&:focus {
+					border: 1px solid $green_color;
+				}
+			}
+		}
+	}
+}
